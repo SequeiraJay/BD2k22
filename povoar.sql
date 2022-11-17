@@ -2,7 +2,7 @@
 PRAGMA foreign_keys = on;
 BEGIN TRANSACTION;
 
---ID CODES: 0/JOGADOR 1/Equipa/ 2/Clube 3/Pavilhao  4/Jogo 5/Golo
+--ID CODES: 0/JOGADOR 1/Equipa/ 2/Clube 3/Jogo  4/Pavilhao 5/Golo
 --TABLE Jogador
 --Porto Jogadores
 INSERT INTO Jogador(
@@ -291,35 +291,11 @@ INSERT INTO Clube(
                     'FC Porto',
                     'Via FC Porto--Estádio do Dragão',
                     '1893-09-28',
-                    30001
+                    40001
 
                 );
             
---PORTO JOGO--
-INSERT INTO Jogo(
-                    idJogo,
-                    jornada,
-                    data_jogo,    ///////
-                    idEquipa,       //////////  
-                    idPavilhão  ////////// template jogo e golo
-                )
-                VALUES(
 
-
-                );
---PORTO GOLO--
-INSERT INTO Golo(
-                    idGolo,
-                    tipodeGolo,
-                    idJogador,
-                    idEquipa,
-                    idJogo
-                )
-                VALUES(
-
-
-
-                );
 
 --PORTO PAVILHAO--
 INSERT INTO Pavilhão(
@@ -327,10 +303,9 @@ INSERT INTO Pavilhão(
                         nome
                     )
                     VALUES(
-                        30001,
+                        40001,
                         'Dragão Arena'
                     );
-
 
 
 
@@ -636,7 +611,7 @@ INSERT INTO Clube(
                     'Madeira Andebol SAD',
                     'AV ARRIAGA 43,Funchal',
                     '1998-09-29',
-                    30002
+                    40002
 
                 );
 
@@ -646,6 +621,1474 @@ INSERT INTO Pavilhão(
                         nome
                     )
                     VALUES(
-                        30002,
+                        40002,
                         'Pavilhão Desportivo Do Funchal'
                     );
+
+
+--PORTO V MADEIRA JOGO--
+INSERT INTO Jogo(
+                    idJogo,
+                    jornada,
+                    data_jogo,
+                    resultado,   
+                    idEquipa,       //////////  
+                    idPavilhão  
+                )
+                VALUES(
+                    30002,
+                    30,
+                    '2022-06-04',
+                    '30-34'
+
+                    
+                    40002
+                    );
+--PORTO v MADEIRA GOLOS MADEIRA--
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50001,
+                    00027,
+                    10002,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50002,
+                    00032,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50003,
+                    00032,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50004,
+                    00032,
+                    10002,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50005,
+                    00034,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50006,
+                    00034,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50007,
+                    00034,
+                    10002,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50008,
+                    00035,
+                    10002,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50009,
+                    00035,
+                    10002,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50010,
+                    00035,
+                    10002,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50011,
+                    00035,
+                    10002,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50012,
+                    00035,
+                    10002,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50013,
+                    00037,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50014,
+                    00037,
+                    10002,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50015,
+                    00037,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50016,
+                    00037,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50017,
+                    00037,
+                    10002,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50018,
+                    00038,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50019,
+                    00038,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50020,
+                    00038,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50021,
+                    00038,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50022,
+                    00038,
+                    10002,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50023,
+                    00040,
+                    10002,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50024,
+                    00040,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50025,
+                    00040,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50026,
+                    00040,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50027,
+                    00040,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50028,
+                    00040,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50029,
+                    00040,
+                    10002,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50030,
+                    00040,
+                    10002,
+                    30002
+                );
+
+-- GOLOS PORTO MADEIRA V PORTO--
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50031,
+                    00007,
+                    10001,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50032,
+                    00007,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50033,
+                    00007,
+                    10001,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50034,
+                    00002,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50035,
+                    00002,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50036,
+                    00002,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50037,
+                    00002,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50038,
+                    00002,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50039,
+                    00002,
+                    10001,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50040,
+                    00003,
+                    10001,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50041,
+                    00003,
+                    10001,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50042,
+                    00003,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50043,
+                    00003,
+                    10001,
+                    30002
+                );
+
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50044,
+                    00010,
+                    10001,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50045,
+                    00010,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50046,
+                    00010,
+                    10001,
+                    30002
+                );
+
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50047,
+                    00011,
+                    10001,
+                    30002
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50048,
+                    00011,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50049,
+                    00011,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50050,
+                    00011,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50051,
+                    00011,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50052,
+                    00013,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50053,
+                    00013,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50054,
+                    00013,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50055,
+                    00014,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50056,
+                    00014,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50057,
+                    00014,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50058,
+                    00015,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50059,
+                    00015,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50060,
+                    00016,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50061,
+                    00015,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50062,
+                    00019,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50063,
+                    00019,
+                    10001,
+                    30002
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50064,
+                    00019,
+                    10001,
+                    30002
+                );
+
+
+--- JOGO PORTO V MADEIRA --
+
+INSERT INTO Jogo(
+                    idJogo,
+                    jornada,
+                    data_jogo,
+                    resultado,    
+                    idEquipa,       //////////  
+                    idPavilhão  ////////// template jogo e golo
+                )
+                VALUES(
+                    30001,
+                    15,
+                    '2022-02-04',
+                    '33-19',
+                    
+                    40002
+                    );
+
+--- GOLOS PORTO PORTO v MADEIRA--
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50101,
+                    00007,
+                    10001,
+                    30001
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50102,
+                    00009,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50103,
+                    00009,
+                    10001,
+                    30001
+                );
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50104,
+                    00002,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50105,
+                    00002,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50106,
+                    00002,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50107,
+                    00002,
+                    10001,
+                    30001
+                );
+               
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50108,
+                    00010,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50109,
+                    00010,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50110,
+                    00011,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50111,
+                    00011,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50112,
+                    00011,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50113,
+                    00011,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50114,
+                    00013,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50115,
+                    00013,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50116,
+                    00013,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50117,
+                    00013,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50118,
+                    00014,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50119,
+                    00014,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50120,
+                    00014,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50121,
+                    00015,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50122,
+                    00015,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50123,
+                    00015,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50124,
+                    00015,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50125,
+                    00015,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50126,
+                    00015,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50127,
+                    00015,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50128,
+                    00015,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50129,
+                    00016,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50130,
+                    00016,
+                    10001,
+                    30001
+                );
+ INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50131,
+                    00017,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50132,
+                    00017,
+                    10001,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50133,
+                    00019,
+                    10001,
+                    30001
+                );
+
+-- GOLOS MADEIRA Madeira v Porto --
+
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50134,
+                    00026,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50135,
+                    00026,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50136,
+                    00031,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50137,
+                    00032,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50138,
+                    00030,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50139,
+                    00035,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50140,
+                    00037,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50141,
+                    00037,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50142,
+                    00037,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50143,
+                    00040,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50144,
+                    00040,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50145,
+                    00040,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50146,
+                    00040,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50147,
+                    00040,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50148,
+                    00041,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50149,
+                    00041,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50150,
+                    00041,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50151,
+                    00041,
+                    10002,
+                    30001
+                );
+INSERT INTO Golo(
+                    idGolo,
+                    idJogador,
+                    idEquipa,
+                    idJogo
+                )
+                VALUES(
+                    50152,
+                    00041,
+                    10002,
+                    30001
+                );
