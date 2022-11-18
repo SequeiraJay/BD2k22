@@ -3,24 +3,27 @@
 
 --Apaga as tabelas caso estas existam--
 
-DROP TABLE IF EXISTS Jogador;
-DROP TABLE IF EXISTS Equipa;
-DROP TABLE IF EXISTS Clube;
-DROP TABLE IF EXISTS Jogo;
 DROP TABLE IF EXISTS Pavilhão;
+DROP TABLE IF EXISTS Clube;
+DROP TABLE IF EXISTS Equipa;
+DROP TABLE IF EXISTS Jogador;
+DROP TABLE IF EXISTS Jogo;
 DROP TABLE IF EXISTS Golo;
 
 
 --CREATE TABLES --
+CREATE TABLE Pavilhão(
+    idPavilhão  INTEGER PRIMARY KEY,
+    nome        TEXT CONSTRAINT nn_nome_pavilhão NOT NULL
 
-CREATE TABLE Jogador(
-        idJogador       INTEGER PRIMARY KEY,
-        nome            TEXT CONSTRAINT nn_nome_jogador NOT NULL,
-        nacionalidade   TEXT CONSTRAINT nn_nacionalidade_jogador NOT NULL,
-        dataNasc        DATE CONSTRAINT nn_dataNascimento_jogador NOT NULL,
-        idEquipa        INTEGER CONSTRAINT fk_equipa REFERENCES Equipa(idEquipa)
-    );
-
+);
+CREATE TABLE Clube(
+    idClube      INTEGER PRIMARY KEY,
+    nome         TEXT CONSTRAINT nn_nome_clube NOT NULL,
+    morada       TEXT,
+    dataFundação TEXT,
+    idPavilhão   INTEGER CONSTRAINT fk_pavilhão REFERENCES Pavilhão(idPavilhão)
+);
 CREATE TABLE Equipa(
     idEquipa       INTEGER PRIMARY KEY,
     nome           TEXT CONSTRAINT nn_nome_equipa NOT NULL,
@@ -29,23 +32,25 @@ CREATE TABLE Equipa(
 
 
 );
+CREATE TABLE Jogador(
+        idJogador       INTEGER PRIMARY KEY,
+        nome            TEXT CONSTRAINT nn_nome_jogador NOT NULL,
+        nacionalidade   TEXT CONSTRAINT nn_nacionalidade_jogador NOT NULL,
+        dataNasc        DATE CONSTRAINT nn_dataNascimento_jogador NOT NULL,
+        idEquipa        INTEGER CONSTRAINT fk_equipa REFERENCES Equipa(idEquipa)
+    );
 
-CREATE TABLE Clube(
-    idClube      INTEGER PRIMARY KEY,
-    nome         TEXT CONSTRAINT nn_nome_clube NOT NULL,
-    morada       TEXT,
-    dataFundação TEXT,
-    idPavilhão   INTEGER CONSTRAINT fk_pavilhão REFERENCES Pavilhão(idPavilhão)
-);
+
+
+
 
 CREATE TABLE Jogo (
     idJogo      INTEGER PRIMARY KEY,
-    visitante   TEXT CONSTRAINT id_equipa_visitante REFERENCES Equipa(idEquipa),
-    visitado    TEXT CONSTRAINT id_equipa_visitada  REFERENCES Equipa(idEquipa),
+    visitante   INTEGER CONSTRAINT id_equipa_visitante REFERENCES Equipa(idEquipa),
+    visitado    INTEGER CONSTRAINT id_equipa_visitada  REFERENCES Equipa(idEquipa),
     jornada     INTEGER CONSTRAINT  nn_jornada CHECK((jornada >0 AND jornada <= 30)),
     resultado   TEXT CONSTRAINT nn_resultado_jogo NOT NULL,
     data        DATE CONSTRAINT nn_datajogo_jogo NOT NULL,
-    idEquipa    INTEGER CONSTRAINT fk_equipa REFERENCES Equipa(idEquipa),
     idPavilhão  INTEGER CONSTRAINT fk_pavilhão REFERENCES Pavilhão(idPavilhão)
 
 
@@ -58,8 +63,3 @@ CREATE TABLE Golo(
     idJogo      INTEGER CONSTRAINT fk_jogo REFERENCES Jogo(idJogo)
 );
     
-CREATE TABLE Pavilhão(
-    idPavilhão  INTEGER PRIMARY KEY,
-    nome        TEXT CONSTRAINT nn_nome_pavilhão NOT NULL
-
-);
