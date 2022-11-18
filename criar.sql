@@ -27,7 +27,7 @@ CREATE TABLE Clube(
 CREATE TABLE Equipa(
     idEquipa       INTEGER PRIMARY KEY,
     nome           TEXT CONSTRAINT nn_nome_equipa NOT NULL,
-    classificação  INTEGER CONSTRAINT check_max_class CHECK((classificação > 0 AND classificação <=16)) CONSTRAINT nn_class_equipa NOT NULL,
+    classificação  INTEGER CONSTRAINT check_max_class CHECK((classificação >= 1 AND classificação <=16)) CONSTRAINT nn_class_equipa NOT NULL,
     idClube        INTEGER CONSTRAINT fk_clube REFERENCES Clube(idClube)
 
 
@@ -48,7 +48,7 @@ CREATE TABLE Jogo (
     idJogo      INTEGER PRIMARY KEY,
     visitante   INTEGER CONSTRAINT id_equipa_visitante REFERENCES Equipa(idEquipa),
     visitado    INTEGER CONSTRAINT id_equipa_visitada  REFERENCES Equipa(idEquipa),
-    jornada     INTEGER CONSTRAINT  nn_jornada CHECK((jornada >0 AND jornada <= 30)),
+    jornada     INTEGER CONSTRAINT  nn_jornada CHECK((jornada >= 1 AND jornada <= 30)),
     resultado   TEXT CONSTRAINT nn_resultado_jogo NOT NULL,
     data        DATE CONSTRAINT nn_datajogo_jogo NOT NULL,
     idPavilhão  INTEGER CONSTRAINT fk_pavilhão REFERENCES Pavilhão(idPavilhão)
