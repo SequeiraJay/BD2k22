@@ -1,11 +1,10 @@
-
 PRAGMA foreign_keys = on;
-DELETE FROM Pavilhão;
-DELETE FROM Clube;
-DELETE FROM Equipa;
-DELETE FROM Jogador;
-DELETE FROM Jogo;
 DELETE FROM Golo;
+DELETE FROM Jogo;
+DELETE FROM Jogador;
+DELETE FROM Equipa;
+DELETE FROM Clube;
+DELETE FROM Pavilhão;
 
 INSERT INTO Pavilhão(
                         idPavilhão,
@@ -50,7 +49,6 @@ INSERT INTO Clube(
                     'AV ARRIAGA 43,Funchal',
                     '1998-09-29',
                     40002
-
                 );
 -- PORTO EQUIPA--
 INSERT INTO Equipa(
