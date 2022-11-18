@@ -1,6 +1,6 @@
 
 PRAGMA foreign_keys = on;
-BEGIN TRANSACTION;
+
 
 --ID CODES: 0/JOGADOR 1/Equipa/ 2/Clube 3/Jogo  4/Pavilhao 5/Golo
 --TABLE Jogador
@@ -8,6 +8,7 @@ BEGIN TRANSACTION;
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -21,6 +22,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -34,6 +36,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -47,6 +50,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -60,6 +64,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -73,6 +78,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -86,6 +92,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -99,6 +106,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -112,6 +120,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -125,6 +134,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -138,6 +148,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -151,6 +162,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -164,6 +176,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -177,6 +190,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -190,6 +204,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -203,6 +218,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -216,6 +232,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -229,6 +246,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -242,6 +260,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -255,6 +274,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -270,11 +290,13 @@ INSERT INTO Jogador(
 INSERT INTO Equipa(
                     idEquipa,
                     nome,
+                    classificação,
                     idClube
                 )
                 VALUES(
                     10001,
                     'Porto',
+                    1,
                     20001
                 );
 
@@ -292,7 +314,6 @@ INSERT INTO Clube(
                     'Via FC Porto--Estádio do Dragão',
                     '1893-09-28',
                     40001
-
                 );
             
 
@@ -314,6 +335,7 @@ INSERT INTO Pavilhão(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -327,6 +349,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -340,6 +363,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -353,6 +377,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -366,6 +391,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -379,6 +405,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -392,6 +419,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -405,6 +433,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -418,6 +447,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -431,6 +461,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -444,6 +475,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -457,6 +489,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -470,6 +503,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -483,6 +517,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -496,6 +531,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -509,6 +545,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -522,6 +559,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -535,6 +573,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -548,6 +587,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -561,6 +601,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -574,6 +615,7 @@ INSERT INTO Jogador(
 INSERT INTO Jogador(
                         idJogador,
                         nome,
+                        nacionalidade,
                         dataNasc,
                         idEquipa
                     )
@@ -590,11 +632,13 @@ INSERT INTO Jogador(
 INSERT INTO Equipa(
                     idEquipa,
                     nome,
+                    classificação,
                     idClube
                 )
                 VALUES(
                     10002,
                     'Madeira SAD',
+                    9,
                     20002
                 );
 -- MADEIRA CLUBE--
@@ -630,7 +674,7 @@ INSERT INTO Pavilhão(
 INSERT INTO Jogo(
                     idJogo,
                     jornada,
-                    data_jogo,
+                    data,
                     resultado,   
                     idEquipa,       //////////  
                     idPavilhão  
@@ -1446,7 +1490,7 @@ INSERT INTO Golo(
 INSERT INTO Jogo(
                     idJogo,
                     jornada,
-                    data_jogo,
+                    data,
                     resultado,    
                     idEquipa,       //////////  
                     idPavilhão  ////////// template jogo e golo
