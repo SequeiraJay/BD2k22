@@ -1,6 +1,84 @@
 
 PRAGMA foreign_keys = on;
+DELETE FROM Pavilhão;
+DELETE FROM Clube;
+DELETE FROM Equipa;
+DELETE FROM Jogador;
+DELETE FROM Jogo;
+DELETE FROM Golo;
 
+INSERT INTO Pavilhão(
+                        idPavilhão,
+                        nome
+                    )
+                    VALUES(
+                        40001,
+                        'Dragão Arena'
+                    );
+INSERT INTO Pavilhão(
+                        idPavilhão,
+                        nome
+                    )
+                    VALUES(
+                        40002,
+                        'Pavilhão Desportivo Do Funchal'
+                    );
+INSERT INTO Clube(
+                    idClube,
+                    nome,
+                    morada,
+                    dataFundação,
+                    idPavilhão
+                )
+                VALUES(
+                    20001,
+                    'FC Porto',
+                    'Via FC Porto--Estádio do Dragão',
+                    '1893-09-28',
+                    40001
+                );
+INSERT INTO Clube(
+                    idClube,
+                    nome,
+                    morada,
+                    dataFundação,
+                    idPavilhão
+                )
+                VALUES(
+                    20002,
+                    'Madeira Andebol SAD',
+                    'AV ARRIAGA 43,Funchal',
+                    '1998-09-29',
+                    40002
+
+                );
+-- PORTO EQUIPA--
+INSERT INTO Equipa(
+                    idEquipa,
+                    nome,
+                    classificação,
+                    idClube
+                )
+                VALUES(
+                    10001,
+                    'Porto',
+                    1,
+                    20001
+                );
+-- MADEIRA EQUIPA--
+
+INSERT INTO Equipa(
+                    idEquipa,
+                    nome,
+                    classificação,
+                    idClube
+                )
+                VALUES(
+                    10002,
+                    'Madeira SAD',
+                    9,
+                    20002
+                );
 
 --ID CODES: 0/JOGADOR 1/Equipa/ 2/Clube 3/Jogo  4/Pavilhao 5/Golo
 --TABLE Jogador
@@ -286,47 +364,12 @@ INSERT INTO Jogador(
                         10001
                     );  
 
--- PORTO EQUIPA--
-INSERT INTO Equipa(
-                    idEquipa,
-                    nome,
-                    classificação,
-                    idClube
-                )
-                VALUES(
-                    10001,
-                    'Porto',
-                    1,
-                    20001
-                );
 
---PORTO CLUBE--
-INSERT INTO Clube(
-                    idClube,
-                    nome,
-                    morada,
-                    dataFundação,
-                    idPavilhão
-                )
-                VALUES(
-                    20001,
-                    'FC Porto',
-                    'Via FC Porto--Estádio do Dragão',
-                    '1893-09-28',
-                    40001
-                );
+
             
 
 
---PORTO PAVILHAO--
-INSERT INTO Pavilhão(
-                        idPavilhão,
-                        nome
-                    )
-                    VALUES(
-                        40001,
-                        'Dragão Arena'
-                    );
+
 
 
 
@@ -627,68 +670,46 @@ INSERT INTO Jogador(
                         10002
                     );
 
--- MADEIRA EQUIPA--
-
-INSERT INTO Equipa(
-                    idEquipa,
-                    nome,
-                    classificação,
-                    idClube
-                )
-                VALUES(
-                    10002,
-                    'Madeira SAD',
-                    9,
-                    20002
-                );
--- MADEIRA CLUBE--
-
-INSERT INTO Clube(
-                    idClube,
-                    nome,
-                    morada,
-                    dataFundação,
-                    idPavilhão
-                )
-                VALUES(
-                    20002,
-                    'Madeira Andebol SAD',
-                    'AV ARRIAGA 43,Funchal',
-                    '1998-09-29',
-                    40002
-
-                );
-
---MADEIRA PAVILHÃO--
-INSERT INTO Pavilhão(
-                        idPavilhão,
-                        nome
-                    )
-                    VALUES(
-                        40002,
-                        'Pavilhão Desportivo Do Funchal'
-                    );
-
 
 --PORTO V MADEIRA JOGO--
 INSERT INTO Jogo(
                     idJogo,
+                    visitante,
+                    visitado,
                     jornada,
-                    data,
                     resultado,   
-                    idEquipa,       //////////  
+                    data, 
                     idPavilhão  
                 )
                 VALUES(
                     30002,
+                    10001,
+                    10002,
                     30,
+                    '30-34',
                     '2022-06-04',
-                    '30-34'
-
-                    
                     40002
                     );
---PORTO v MADEIRA GOLOS MADEIRA--
+INSERT INTO Jogo(
+                    idJogo,
+                    visitante,
+                    visitado,
+                    jornada,
+                    resultado,   
+                    data, 
+                    idPavilhão  
+                )
+                VALUES(
+                    30001,
+                    10002,
+                    10001,
+                    15,
+                    '33-19',
+                    '2022-02-04',
+                    40001
+                    );
+
+--PORTO v MADEIRA GOLOS MADEIRA
 INSERT INTO Golo(
                     idGolo,
                     idJogador,
@@ -1485,24 +1506,7 @@ INSERT INTO Golo(
                 );
 
 
---- JOGO PORTO V MADEIRA --
 
-INSERT INTO Jogo(
-                    idJogo,
-                    jornada,
-                    data,
-                    resultado,    
-                    idEquipa,       //////////  
-                    idPavilhão  ////////// template jogo e golo
-                )
-                VALUES(
-                    30001,
-                    15,
-                    '2022-02-04',
-                    '33-19',
-                    
-                    40002
-                    );
 
 --- GOLOS PORTO PORTO v MADEIRA--
 
