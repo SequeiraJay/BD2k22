@@ -22,6 +22,38 @@ INSERT INTO Pavilhão(
                         40002,
                         'Pavilhão Desportivo Do Funchal'
                     );
+INSERT INTO Pavilhão(
+                        idPavilhão,
+                        nome
+                    )
+                    VALUES(
+                        40003,
+                        'Pavilhão João Rocha'
+                    );
+INSERT INTO Pavilhão(
+                        idPavilhão,
+                        nome
+                    )
+                    VALUES(
+                        40004,
+                        'Pavilhão Fidelidade'
+                    );
+INSERT INTO Pavilhão(
+                        idPavilhão,
+                        nome
+                    )
+                    VALUES(
+                        40005,
+                        'Pavilhão Acácio Rosa'
+                    );
+INSERT INTO Pavilhão(
+                        idPavilhão,
+                        nome
+                    )
+                    VALUES(
+                        40006,
+                        'Pavilhão da Associação Atlética de Águas Santas'
+                    );
 INSERT INTO Clube(
                     idClube,
                     nome,
@@ -50,6 +82,62 @@ INSERT INTO Clube(
                     '1998-09-29',
                     40002
                 );
+INSERT INTO Clube(
+                    idClube,
+                    nome,
+                    morada,
+                    dataFundação,
+                    idPavilhão
+                )
+                VALUES(
+                    20003,
+                    'Sporting Clube de Portugal',
+                    'R. Francisco Stromp, Lisboa',
+                    '1906-07-01',
+                    40003
+                );
+INSERT INTO Clube(
+                    idClube,
+                    nome,
+                    morada,
+                    dataFundação,
+                    idPavilhão
+                )
+                VALUES(
+                    20004,
+                    'Sport Lisboa e Benfica',
+                    'Av. Eusébio da Silva Ferreira, Lisboa',
+                    '1904-02-28',
+                    40004
+                );     
+INSERT INTO Clube(
+                    idClube,
+                    nome,
+                    morada,
+                    dataFundação,
+                    idPavilhão
+                )
+                VALUES(
+                    20005,
+                    'Os Belenenses',
+                    'R. de Alcolena 3, Lisboa',
+                    '1919-09-23',
+                    40005
+                );   
+INSERT INTO Clube(
+                    idClube,
+                    nome,
+                    morada,
+                    dataFundação,
+                    idPavilhão
+                )
+                VALUES(
+                    20006,
+                    'Associacao Atletica Aguas Santas',
+                    'R. Ferreira de Castro 84, Águas Santas',
+                    '1975-02-08',
+                    40006
+                );          
 -- PORTO EQUIPA--
 INSERT INTO Equipa(
                     idEquipa,
@@ -77,6 +165,57 @@ INSERT INTO Equipa(
                     9,
                     20002
                 );
+INSERT INTO Equipa(
+                    idEquipa,
+                    nome,
+                    classificação,
+                    idClube
+                )
+                VALUES(
+                    10003,
+                    'Sporting',
+                    2,
+                    20003
+                );
+INSERT INTO Equipa(
+                    idEquipa,
+                    nome,
+                    classificação,
+                    idClube
+                )
+                VALUES(
+                    10004,
+                    'Benfica',
+                    3,
+                    20004
+                );
+INSERT INTO Equipa(
+                    idEquipa,
+                    nome,
+                    classificação,
+                    idClube
+                )
+                VALUES(
+                    10005,
+                    'Belenenses',
+                    4,
+                    20005
+                );
+
+INSERT INTO Equipa(
+                    idEquipa,
+                    nome,
+                    classificação,
+                    idClube
+                )
+                VALUES(
+                    10006,
+                    'Águas Santas',
+                    5,
+                    20006
+                );
+
+
 
 --ID CODES: 0/JOGADOR 1/Equipa/ 2/Clube 3/Jogo  4/Pavilhao 5/Golo
 --TABLE Jogador
@@ -384,7 +523,7 @@ INSERT INTO Jogador(
                         00021,
                         'Hugo Freitas',
                         'Portugal',
-                        '1997-12-29',
+                        '1997-12-29',       
                         10002
                     );
 INSERT INTO Jogador(
@@ -668,7 +807,1311 @@ INSERT INTO Jogador(
                         10002
                     );
 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00042,
+                        'Matevz Skok',
+                        'Eslovénia',
+                        '1986-09-02',
+                        10003
+                    );  
 
+
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00043,
+                        'Manuel Gaspar',
+                        'Portugal',
+                        '1998-12-09',
+                        10003
+                    ); 
+
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00044,
+                        'Yassine Belkaied',
+                        'Tunísia',
+                        '2000-10-19',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00045,
+                        'Natán Suárez',
+                        'Espanha',
+                        '1998-01-20',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00046,
+                        'André José',
+                        'Portugal',
+                        '2001-04-19',
+                        10003
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00047,
+                        'Carlos Ruesga',
+                        'Espanha',
+                        '1985-03-10',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00048,
+                        'Dinis Real',
+                        'Portugal',
+                        '2002-11-14',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00049,
+                        'Hanser Rodríguez',
+                        'Cuba',
+                        '2000-05-05',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00050,
+                        'Benjamim João',
+                        'Portugal',
+                        '1900-01-21',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00051,
+                        'Tiago Pinto',
+                        'Portugal',
+                        '2003-09-23',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00052,
+                        'Mamadou Gassama',
+                        'Espanha',
+                        '1993-10-28',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                       00053,
+                        'Francisco Tavares',
+                        'Portugal',
+                        '1996-11-14',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00054,
+                        'Duarte Seixas',
+                        'Portugal',
+                        '2002-07-05',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00055,
+                        'João Gonçalves',
+                        'Portugal',
+                        '2003-01-06',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00056,
+                        'Josep Folqués',
+                        'Espanha',
+                        '1996-04-08',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00057,
+                        'António Machado',
+                        'Portugal',
+                        '2004-03-11',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00058,
+                        'Jonas Tidemand',
+                        'Dinamarca',
+                        '1994-09-28',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00059,
+                        'Erekle Arsenashvili',
+                        'Geórgia',
+                        '1998-10-18',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00060,
+                        'Eduardo Almeida',
+                        'Portugal',
+                        '2003-02-24',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00061,
+                        'Ronaldo Almeida',
+                        'Cuba',
+                        '2002-08-20',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00062,
+                        'Edmilson Araújo',
+                        'Cabo Verde',
+                        '1994-01-06',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00063,
+                        'Francisco Costa',
+                        'Portugal',
+                        '2005-02-16',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00064,
+                        'Salvador Salvador',
+                        'Portugal',
+                        '2001-07-20',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00065,
+                        'Jens Schongarth',
+                        'Alemanha',
+                        '1988-12-07',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00066,
+                        'Miguel Lourenço',
+                        'Portugal',
+                        '2002-09-23',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00067,
+                        'Martim Costa',
+                        'Portugal',
+                        '2002-09-27',
+                        10003
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00068,
+                        'Pedro Tonicher',
+                        'Portugal',
+                        '2003-01-16',
+                        10004
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00069,
+                        'Rodrigo Gameiro',
+                        'Portugal',
+                        '2002-04-17',
+                        10004
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00070,
+                        'Gustavo Capdeville',
+                        'Portugal',
+                        '1997-08-31',
+                        10004
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00071,
+                        'Bernardo Almeida',
+                        'Portugal',
+                        '2005-06-14',
+                        10004
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00072,
+                        'Sergey Hernández',
+                        'Espanha',
+                        '1995-06-17',
+                        10004
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00073,
+                        'Arnau García',
+                        'Espanha',
+                        '1994-06-12',
+                        10004
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00074,
+                        'Bélone Moreira',
+                        'Portugal',
+                        '1990-06-01',
+                        10004
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00075,
+                        'Martim Ferraz',
+                        'Portugal',
+                        '2003-09-30',
+                        10004
+                    );  
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00076,
+                        'Gabriel Sequeira',
+                        'Portugal',
+                        '2003-09-30',
+                        10004
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00077,
+                        'Francisco Pereira',
+                        'Portugal',
+                        '1999-03-26',
+                        10004
+                    );  
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00078,
+                        'Afonso Mendes',
+                        'Portugal',
+                        '2005-01-11',
+                        10004
+                    );  
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00079,
+                        'Diogo Campos',
+                        'Portugal',
+                        '2004-07-07',
+                        10004
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00080,
+                        'Carlos Martins',
+                        'Portugal',
+                        '1994-06-14',
+                        10004
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00081,
+                        'Alexis Borges',
+                        'Portugal',
+                        '1991-10-06',
+                        10004
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00082,
+                        'João Bandeira',
+                        'Portugal',
+                        '2006-05-10',
+                        10004
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00083,
+                        'Lazar Kukic',
+                        'Sérvia',
+                        '1995-12-12',
+                        10004
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00084,
+                        'Mahamadou Keita',
+                        'França',
+                        '1995-07-18',
+                        10004
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00085,
+                        'Jonas Kallman',
+                        'Suécia',
+                        '1981-07-17',
+                        10004
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00200,
+                        'Ole Rahmel',
+                        'Alemanha',
+                        '1989-11-19',
+                        10004
+                    );  
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00086,
+                        'Paulo Moreno',
+                        'Cabo Verde',
+                        '1992-05-08',
+                        10004
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00087,
+                        'Remus Chis',
+                        'Roménia',
+                        '2004-07-04',
+                        10004
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00088,
+                        'Demis Grigoras',
+                        'Roménia',
+                        '1993-06-30',
+                        10004
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00089,
+                        'Rogério Moraes',
+                        'Brasil',
+                        '1994-01-11',
+                        10004
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00090,
+                        'Luciano Silva',
+                        'Brasil',
+                        '2000-02-19',
+                        10004
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00091,
+                        'Tadej Kljun',
+                        'Eslovénia',
+                        '2001-04-18',
+                        10004
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00092,
+                        'Petar Djordjic',
+                        'Sérvia',
+                        '1990-09-17',
+                        10004
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00093,
+                        'Miguel Moreira',
+                        'Portugal',
+                        '1992-03-16',
+                        10005
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00094,
+                        'João Moniz',
+                        'Portugal',
+                        '2001-06-06',
+                        10005
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00095,
+                        'Tiago Silva',
+                        'Portugal',
+                        '2004-03-02',
+                        10005
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00096,
+                        'Fábio Caculo',
+                        'Portugal',
+                        '1996-07-24',
+                        10005
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00097,
+                        'Christopher Selles',
+                        'Portugal',
+                        '1997-06-16',
+                        10005
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00098,
+                        'Tiago Pereira',
+                        'Portugal',
+                        '2004-05-04',
+                        10005
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00099,
+                        'Rui Barreto',
+                        'Portugal',
+                        '2000-10-04',
+                        10005
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00100,
+                        'Filipe Pinho',
+                        'Portugal',
+                        '1998-07-02',
+                        10005
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00101,
+                        'Tomás Ferreira',
+                        'Portugal',
+                        '1991-03-31',
+                        10005
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00103,
+                        'Gonçalo Valério',
+                        'Portugal',
+                        '1991-03-23',
+                        10005
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00104,
+                        'Gonçalo Nogueira',
+                        'Portugal',
+                        '1999-09-17',
+                        10005
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00105,
+                        'Tiago Ferro',
+                        'Portugal',
+                        '2003-06-16',
+                        10005
+                    );  
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00106,
+                        'Carlos Siqueira',
+                        'Portugal',
+                        '1993-08-16',
+                        10005
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00107,
+                        'Bruno Moreira',
+                        'Portugal',
+                        '1997-12-16',
+                        10005
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00108,
+                        'Diogo Domingos',
+                        'Portugal',
+                        '2001-09-18',
+                        10005
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00109,
+                        'Luís Cabral',
+                        'Portugal',
+                        '1998-10-16',
+                        10005
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00110,
+                        'João Ferreira',
+                        'Portugal',
+                        '1999-05-21',
+                        10005
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00111,
+                        'Cláudio Pedroso',
+                        'Portugal',
+                        '1985-04-21',
+                        10005
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00112,
+                        'António Campos',
+                        'Portugal',
+                        '1979-12-26',
+                        10006
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00113,
+                        'Miguel Loureiro',
+                        'Portugal',
+                        '2001-05-14',
+                        10006
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00114,
+                        'Alexandre Magalhães',
+                        'Portugal',
+                        '2002-11-21',
+                        10006
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00115,
+                        'Rafael Azevedo',
+                        'Portugal',
+                        '2003-02-26',
+                        10006
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00116,
+                        'Pedro Seabra',
+                        'Portugal',
+                        '1994-01-16',
+                        10006
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00117,
+                        'Andre Sousa',
+                        'Portugal',
+                        '1996-03-31',
+                        10006
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00118,
+                        'Miguel Neves',
+                        'Portugal',
+                        '1992-06-16',
+                        10006
+                    );
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00119,
+                        'Ricardo Mourão',
+                        'Portugal',
+                        '1992-05-14',
+                        10006
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00120,
+                        'Fábio Teixeira',
+                        'Portugal',
+                        '1984-01-12',
+                        10006
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00121,
+                        'Mário Lourenço',
+                        'Portugal',
+                        '2005-02-12',
+                        10006
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00122,
+                        'Miguel Carvalho',
+                        'Portugal',
+                        '1995-04-25',
+                        10006
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00123,
+                        'Miguel Pinto',
+                        'Portugal',
+                        '1999-12-01',
+                        10006
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00124,
+                        'Francisco Coelho',
+                        'Portugal',
+                        '1991-04-30',
+                        10006
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00125,
+                        'Carlos Santos',
+                        'Portugal',
+                        '2000-08-27',
+                        10006
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00126,
+                        'Francisco Fontes',
+                        'Portugal',
+                        '2000-03-21',
+                        10006
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00127,
+                        'Tiago Sousa',
+                        'Portugal',
+                        '1990-01-28',
+                        10006
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00128,
+                        'Nuno Gonçalves',
+                        'Portugal',
+                        '1988-12-25',
+                        10006
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00129,
+                        'Vasco Santos',
+                        'Portugal',
+                        '1985-10-29',
+                        10006
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00130,
+                        'José Barbosa',
+                        'Portugal',
+                        '2004-05-12',
+                        10006
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00131,
+                        'Rúben Ribeiro',
+                        'Portugal',
+                        '2003-02-09',
+                        10006
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00132,
+                        'João Gomes',
+                        'Portugal',
+                        '2000-10-15',
+                        10006
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00133,
+                        'Miguel Baptista',
+                        'Portugal',
+                        '2003-12-21',
+                        10006
+                    ); 
+INSERT INTO Jogador(
+                        idJogador,
+                        nome,
+                        nacionalidade,
+                        dataNasc,
+                        idEquipa
+                    )
+                    VALUES(
+                        00134,
+                        'Miguel Neves',
+                        'Portugal',
+                        '1998-07-07',
+                        10006
+                    );                                                                            
 --PORTO V MADEIRA JOGO--
 INSERT INTO Jogo(
                     idJogo,
